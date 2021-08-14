@@ -1,0 +1,325 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    --main-theme-color:#63cc71;
+    --white-color:#ffffff;
+    --introduction-title-font-size:48px;
+    --introduction-paragraph-font-size:18px;
+    --button-font-size:15px;
+    --font-family:nunito-sans, sans-serif;
+    font-family:nunito-sans, sans-serif;
+}
+
+.main-navbar 
+{
+    display: none;
+}
+.navbar-brand 
+{
+    font-size: 24px !important;
+    color: var(--white-color) !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.logo
+{
+    border: 2px solid  var(--white-color);
+    margin-left: 1px;
+    padding: 3px;
+}
+.nav-link
+{
+    color: var(--white-color) !important;
+    margin-top: 4%;
+}
+.toggler-icon
+{
+    color: var(--white-color);
+}
+.landing-page 
+{
+    background-size: cover;
+    background-color: #161a25;
+    padding-bottom: 130px !important;
+    overflow: hidden;
+}
+.introduction h1 
+{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 57px;
+    font-family: var(--font-family);
+    text-align: center;
+    color: #ffffff;
+    margin-top: 13%;
+}
+.introduction p 
+{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+}
+.how-to-buy-container
+{
+    background-color:#1f232b;
+    padding-left: 16%;
+}
+.how-to-buy 
+{
+    padding-top: 4%;
+    padding-bottom: 8%;
+}
+.how-to-buy h5 
+{
+    color: rgb(249, 183, 7);
+    font-size: 24px;
+    font-family: var(--font-family);
+}
+.how-to-buy li 
+{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-left: 4%;
+}
+.how-to-buy a 
+{
+    background: transparent;
+    text-decoration: none !important;
+    border: 0.09em solid #63cc71 !important;
+    padding: 8px;
+    border-radius: 10px;
+    color: #63cc71;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.how-to-buy a:hover
+{
+    background-color:#63cc71;
+    color: var(--white-color);
+
+}
+
+@media (max-width:992px) {
+    .how-to-buy h5 
+    {
+        font-size: 20px;
+    }
+    .introduction h1 
+    {
+        font-size: 20px;
+        margin-top: 30%;
+    }
+    .col-lg-6
+    {
+        margin-top: 10%;
+    }
+
+}
+@media (max-width:480px) {
+    .introduction h1 
+    {
+        margin-top: 15%;
+    }
+    
+}
+
+/*Footer Start*/
+footer
+{
+    background-color:#21242c;
+    padding-top: 3%;
+}
+.footer-contents-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 2%;
+}
+.quick-links-container
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    flex: 1;
+}
+.quick-links-container h6 
+{
+    color: #EDEDED;
+    font-size: 19px;
+}
+.quick-links-container a 
+{
+    padding-top: 5%;
+    color: #fff;
+    text-decoration: none;  
+}
+.social-media-links 
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    flex: 1;
+}
+.social-media-links h6 
+{
+    color: #EDEDED;
+    font-size: 19px;
+}
+.social-media-links a 
+{
+    padding-top: 5%;
+    color: #fff;
+    text-decoration: none; 
+}
+.subscribe-form
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.subscribe-form h6 
+{
+    color: #EDEDED;
+    font-size: 19px;
+}
+.input-group 
+{
+    padding-top: 2%;
+}
+.fa-telegram-plane
+{
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 20px;
+}
+.subscribe-button
+{
+    color: transparent;
+    background-color: #185ADB;
+    border-radius: 7px;
+    border: none;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer hr 
+{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+footer span 
+{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+@media only screen and (max-width:480px)
+{
+    footer 
+    {
+        padding-top: 10%;
+    }
+    .footer-contents-container
+    {
+        flex-direction: column;
+        padding-left: 2%;
+    }
+    .quick-links-container
+    {
+        padding-bottom: 0;
+    }
+    .quick-links-container a 
+    {
+        padding-top: 1%;
+        align-self: flex-start;
+    }
+    .social-media-links 
+    {
+        margin-top: 7%;
+        font-size: 14px;
+    }
+    .social-media-links a
+    {
+        padding-top: 1%;
+        font-size: 14px;
+        align-self: flex-start;
+    }
+    .subscribe-form
+    {
+        margin-top: 7%;
+    }
+    footer span 
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .input-group
+    {
+        padding-right: 5%;
+    }
+    .fa-telegram-plane
+    {
+        padding-left: 30%;
+        font-size: 32px;
+    }
+    footer hr 
+    {
+        height: 1px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    footer span
+    {
+        font-size: 12px;
+    }
+}
+.subscribe-form p
+{
+    color: #fff;
+    background-color: #63cc71;
+    padding: 3px;
+    border-radius: 4px;
+    width: 80%;
+    text-align: center !important;
+}
+.subscribe-form span 
+{
+    color: #fff;
+    background-color: #E99497;
+    padding: 3px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center !important;
+}
+.subscribe-form h5
+{
+    color: #fff;
+    background-color: rgb(249, 183, 7);
+    padding-bottom: 5px;
+    border-radius: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+}
+/*Footer End*/
